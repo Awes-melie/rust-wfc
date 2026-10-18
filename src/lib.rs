@@ -1,3 +1,6 @@
+mod bitfield;
+
+
 // input
 // input parser => index + adjacencies + og value + occurrences
 trait ToRepresentation {}
