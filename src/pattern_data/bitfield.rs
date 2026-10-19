@@ -1,7 +1,6 @@
 use std::ops::{BitAnd, BitOr, Not};
 
-struct BitField{
-}
+pub struct BitField {}
 
 impl BitField {
     fn new() -> Self {
@@ -17,7 +16,7 @@ impl BitField {
     }
 }
 
-impl BitOr for BitField{
+impl BitOr for BitField {
     type Output = Self;
 
     fn bitor(self, rhs: Self) -> Self::Output {
@@ -25,7 +24,7 @@ impl BitOr for BitField{
     }
 }
 
-impl BitAnd for BitField{
+impl BitAnd for BitField {
     type Output = Self;
 
     fn bitand(self, rhs: Self) -> Self::Output {
@@ -33,7 +32,7 @@ impl BitAnd for BitField{
     }
 }
 
-impl Not for BitField{
+impl Not for BitField {
     type Output = Self;
 
     fn not(self) -> Self::Output {
