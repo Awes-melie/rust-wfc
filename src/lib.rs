@@ -1,6 +1,5 @@
 mod bitfield;
 
-
 // input
 // input parser => index + adjacencies + og value + occurrences
 trait ToRepresentation {}
@@ -38,6 +37,6 @@ struct InputData {
     // ...
 }
 
-fn parse (InputData) -> InputPatterns {
-
-}
+// fn parse (InputData) -> InputPatterns {
+//
+// }
