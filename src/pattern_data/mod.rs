@@ -21,8 +21,6 @@ struct PatternData {
     adjacencies: Vec<Vec<bitfield::BitField>>,
 }
 
-
-
 struct WaveCell {
     state: bitfield::BitField,
     adjacencies: Vec<Option<usize>>,
@@ -34,8 +32,8 @@ struct Wave {
 }
 
 impl Wave {
-    fn collapse_wave(template: PatternData, wave: &mut Wave){
-        if(wave.order >= template.order){
+    fn collapse_wave(&mut self, template: PatternData){
+        if(self.order >= template.order){
             panic!("Wave order should never be greater than template order.")
         }
     }
